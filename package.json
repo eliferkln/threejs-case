@@ -1,0 +1,20 @@
+{
+  "name": "threejs-example",
+  "version": "0.0.0",
+  "description": "Example ThreeJS ",
+  "source": "src/index.html",
+  "scripts": {
+    "start": "parcel --https",
+    "build": "parcel build --public-url='./'"
+  },
+  "author": "Hanife",
+  "license": "MIT",
+  "dependencies": {
+    "three": "^0.137.0"
+  },
+  "devDependencies": {
+    "@types/three": "^0.138.0",
+    "parcel": "^2.7.0",
+    "gh-pages": "^3.1.0"
+  }
+}
