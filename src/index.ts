@@ -37,9 +37,9 @@ const sphere = new THREE.Mesh(sphereGeometry, sphereMaterial);
 scene.add(sphere);
 const raycaster = new THREE.Raycaster();
 const mouse = new THREE.Vector2();
-const light = new THREE.PointLight(0xffffff, 1, 100);
-light.position.set(10, 10, 10);
-scene.add(light);
+// const light = new THREE.PointLight(0xffffff, 1, 100);
+// light.position.set(10, 10, 10);
+// scene.add(light);
 camera.position.z = 15;
 
 function onDocumentMouseMove(event: MouseEvent) {
@@ -61,7 +61,6 @@ function animate() {
   requestAnimationFrame(animate);
   raycaster.setFromCamera(mouse, camera);
   const intersects = raycaster.intersectObject(sphere);
-
   if (intersects.length > 0) {
     const randomColor = new THREE.Color(
       Math.random(),
